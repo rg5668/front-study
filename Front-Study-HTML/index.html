@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>LKH Web Page</title>
+    <!-- 웹페이지에 대한 설명 -->
+    <meta name="description" content="구글 엔진이 의외로 참고를 많이 하지는 않지만 어느정도 참고" />
+    <!-- 검색 엔진 참고 -->
+    <meta name="keywords" content="HTML, CSS, JAVASCRIPT, LKH, LKH Web page"/>
+    <!-- 저자 -->
+    <meta name="author" content="Lim KunHee" />
+    <!-- 반응형 웹을 위한 태그 각각 디바이스 마다 알맞은 해상도 정보 -->
+    <!-- user-scalable=no 는 확대 불가능하게 하는 것 -->
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <!-- 화면을 렌더링하는 엔진을 다르게 쓰는 경우가 있어 최신 엔진을 쓰라는 태그 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Open Graph (Facebook, Linkedin) -->
+    <meta propery="og:type" contant="website">
+    <meta propery="og:title" content="LKH Web Site">
+    <meta propery="og:description" content="임건희 포토폴리오입니다.">
+    <meta propery="og:image" content="img/fun-coding-mark.png">
+    <meta propery="og:url" content="http://rg4093.dothome.co.kr/">
+    <!-- 사이트에 이름을 알려주는 태그 -->
+    <meta propery="og:site_name" content="LKH PortPolio">
+
+    <!-- twitter card (Twitter) -->
+    <meta name="twitter:card" content="summary">
+    <!-- card 종류 : summary, photo, player -->
+    <meta name="twitter:title" content="LKH Web Site">
+    <meta name="twitter:description" content="임건희 포토폴리오입니다.">
+    <meta name="twitter:image" content="img/fun-coding-mark-png">
+    <meta name="twitter:url" content="http://rg4093.dothome.co.kr/">
+    <!-- 저자 -->
+    <meta name="twitter:creator" content="LKH">
+
+    <!-- 파비콘(페이보릿+아이콘 합친말) 일반적인 fabicon 설정 -->
+    <!-- ico 파일을 넣어주는게 일반적이다. -->
+    <link rel="icon" href="img/fun-coding.ico">
+    <!-- 아이폰용 fabicon -->
+    <link rel="apple-touch-icon" href="img/fun-coding.ico">
+    <!-- 인터넷 익스플로어용 fabicon 설정 -->
+    <link rel="short icon" type="image/x-icon" href="img/fun-coding.ico">
+
+    <!-- CSS 초기화 Reset CDN방식-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+    <!-- normalize가 평생 무료 혹은 사이트 변경이 있을 수 있음으로 파일로 만들어도 무관하다. -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+   <!-- https://fontawesome.com/start -->
+   <script src="https://kit.fontawesome.com/f1def33959.js" crossorigin="anonymous"></script>
+   <!-- Spoca Han Sans Neo: https://spoqa.github.io/spoqa-han-sans/ko-KR/ -->
+   <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+   
+   <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- 시멘틱 태그대로 만든다고 하면 -->
+    <!-- CSS 작명 규칙 (BEM : Block Element Modifier) -->
+    <!-- 
+        단어와 단어 사이에는 하이픈을 사용 ex)head-container-blue
+        __ : ~의 하위 요소 ex) head-container__head_brand 
+        -- : ~의 상태를 나타낼 때 ex) head-container__header-brand--nolink
+    -->
+
+    <header>
+        <div class="inner">
+            <div class="head-container">
+                <div class="head-brand"><a href="#">임건희</a></div>
+                <div class="head-blog"><a href="#">임건희 웹 포토폴리오</a></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- <nav>사용 X </nav> -->
+    <!-- <aside>사용 X</aside> -->
+
+    <!-- 메인 이미지 섹션 -->
+    <section class="main">
+        <div class="main-container">
+            <div class="inner">
+                <div class="title-container">
+                    <div class="title">안녕하세요 임건희 포토폴리오입니다.</div>
+                    <div class="message">임건희 포토폴리오 모음입니다.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="inner">
+            <div class="skill-container">
+                <div class="skill">
+                    <i class="fa-brands fa-js-square skill-icon js-style"></i>
+                    <div class="skill-title">
+                        <div class="skill-name">메인타이틀</div>
+                        <div class="skill-usage">서브타이틀</div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-js-square skill-icon js-style"></i>
+                    <div class="skill-title">
+                        <div class="skill-name">메인타이틀</div>
+                        <div class="skill-usage">서브타이틀</div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-js-square skill-icon js-style"></i>
+                    <div class="skill-title">
+                        <div class="skill-name">메인타이틀</div>
+                        <div class="skill-usage">서브타이틀</div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-js-square skill-icon js-style"></i>
+                    <div class="skill-title">
+                        <div class="skill-name">메인타이틀</div>
+                        <div class="skill-usage">서브타이틀</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="inner">
+            <div class="roadmap-container">
+                <div class="roadmap-title-container">
+                    <div class="roadmap-title">로드맵 타이틀</div>
+                    <div class="arrow-container">
+                        <i class="fas fa-chevron-circle-left slide-prev"></i>
+                        <i class="fas fa-chevron-circle-right slide-next"></i>
+                    </div>
+                </div>
+
+                <ul class="class-list">
+                    <li class="class-card">
+                        <img src="https://www.fun-coding.org/style/images/blog.jpg" alt="임건희 블로그" class="class-image">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">학습방법</div>
+                                <div class="class-format">블로그</div>
+                            </div>
+
+                            <div class="class-desc">
+                                <div class="class-title">타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</div>
+                                <div class="class-detail">설명</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="class-card">
+                        <img src="https://www.fun-coding.org/style/images/blog.jpg" alt="임건희 블로그" class="class-image">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">학습방법</div>
+                                <div class="class-format">블로그</div>
+                            </div>
+
+                            <div class="class-desc">
+                                <div class="class-title">타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</div>
+                                <div class="class-detail">설명</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="class-card">
+                        <img src="https://www.fun-coding.org/style/images/blog.jpg" alt="임건희 블로그" class="class-image">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">학습방법</div>
+                                <div class="class-format">블로그</div>
+                            </div>
+
+                            <div class="class-desc">
+                                <div class="class-title">타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</div>
+                                <div class="class-detail">설명</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="class-card">
+                        <img src="https://www.fun-coding.org/style/images/blog.jpg" alt="임건희 블로그" class="class-image">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">학습방법</div>
+                                <div class="class-format">블로그</div>
+                            </div>
+
+                            <div class="class-desc">
+                                <div class="class-title">타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</div>
+                                <div class="class-detail">설명</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="class-card">
+                        <img src="https://www.fun-coding.org/style/images/blog.jpg" alt="임건희 블로그" class="class-image">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">학습방법</div>
+                                <div class="class-format">블로그</div>
+                            </div>
+
+                            <div class="class-desc">
+                                <div class="class-title">타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</div>
+                                <div class="class-detail">설명</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="class-card">
+                        <img src="https://www.fun-coding.org/style/images/blog.jpg" alt="임건희 블로그" class="class-image">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">학습방법</div>
+                                <div class="class-format">블로그</div>
+                            </div>
+
+                            <div class="class-desc">
+                                <div class="class-title">타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</div>
+                                <div class="class-detail">설명</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="inner">
+            <div class="roadmap-container">
+                <div class="roadmap-title-container">
+                    <div class="roadmap-title">로드맵 타이틀</div>
+                    <div class="arrow-container">
+                        <i class="fas fa-chevron-circle-left slide-prev"></i>
+                        <i class="fas fa-chevron-circle-right slide-next"></i>
+                    </div>
+                </div>
+
+                <ul class="class-list">
+                    <li class="class-card">
+                        <img src="https://www.fun-coding.org/style/images/blog.jpg" alt="임건희 블로그" class="class-image">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">학습방법</div>
+                                <div class="class-format">블로그</div>
+                            </div>
+
+                            <div class="class-desc">
+                                <div class="class-title">타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</div>
+                                <div class="class-detail">설명</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="class-card">
+                        <img src="https://www.fun-coding.org/style/images/blog.jpg" alt="임건희 블로그" class="class-image">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">학습방법</div>
+                                <div class="class-format">블로그</div>
+                            </div>
+
+                            <div class="class-desc">
+                                <div class="class-title">타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</div>
+                                <div class="class-detail">설명</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="class-card">
+                        <img src="https://www.fun-coding.org/style/images/blog.jpg" alt="임건희 블로그" class="class-image">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">학습방법</div>
+                                <div class="class-format">블로그</div>
+                            </div>
+
+                            <div class="class-desc">
+                                <div class="class-title">타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</div>
+                                <div class="class-detail">설명</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="class-card">
+                        <img src="https://www.fun-coding.org/style/images/blog.jpg" alt="임건희 블로그" class="class-image">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">학습방법</div>
+                                <div class="class-format">블로그</div>
+                            </div>
+
+                            <div class="class-desc">
+                                <div class="class-title">타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</div>
+                                <div class="class-detail">설명</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="class-card">
+                        <img src="https://www.fun-coding.org/style/images/blog.jpg" alt="임건희 블로그" class="class-image">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">학습방법</div>
+                                <div class="class-format">블로그</div>
+                            </div>
+
+                            <div class="class-desc">
+                                <div class="class-title">타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</div>
+                                <div class="class-detail">설명</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="class-card">
+                        <img src="https://www.fun-coding.org/style/images/blog.jpg" alt="임건희 블로그" class="class-image">
+                        <div class="class-container">
+                            <div class="class-skill">
+                                <div class="class-type">학습방법</div>
+                                <div class="class-format">블로그</div>
+                            </div>
+
+                            <div class="class-desc">
+                                <div class="class-title">타이틀타이틀타이틀타이틀타이틀타이틀타이틀타이틀</div>
+                                <div class="class-detail">설명</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="inner">
+            <div class="footer-message">합리적인 분들과 좋은 컨텐츠가 지속될 수 있는 선순환 시스템을 지향합니다.</div>
+            <div class="footer-contact">컨텍: rg4093@naver.com</div>
+            <div class="footer-copyright">Copyright 2022 @ All rights reserved.</div>
+        </div>
+
+    </footer>
+
+    <!-- <script src="js/main.js"></script> -->
+</body>
+</html>

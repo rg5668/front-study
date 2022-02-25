@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    color: #333333;
+    font-family: "Spoca Han Sans Neo", "Sans-serif";
+}
+
+a {
+    all: unset;
+}
+a:link {
+    /* 전체 밑줄 */
+    text-decoration: none;
+    color: #333333;
+}
+/* 가상 클래스도 설정 해줘야함 대부분 a태그만 설정 해줌 */
+a:visited {
+    text-decoration: none;
+    color: #333333;
+}
+/* 방문한 상태라면 */
+a:active {
+    text-decoration: none;
+    color: #333333;
+}
+/* 마우스가 올라간 상태 */
+a:hover {
+    text-decoration: none;
+    color: #333333;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+/* Header Start */
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    /* 헤더 고정 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.head-container {
+    width: 100%;
+    height: 100%;
+    /* 안에 내용을 수평 정렬 해야 하기 때문에 flex */
+    display: flex;
+    /* 양쪽 끝에 표시 */
+    justify-content: space-between;
+    /* 수직 정렬 */
+    align-items: center;
+}
+
+.head-container .head-brand {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.head-container .head-brand a:hover {
+    cursor: pointer;
+    color: #2186c4;
+}
+
+.head-container .head-blog {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.head-container .head-blog a:hover {
+    cursor: pointer;
+    color: #2186c4;
+}
+
+/* Header End */
+
+/* Section Start */
+section {
+    width: 100%;
+    background-color: #fff;
+    /* 안넣어도되지만 보통은 absolute 속성 요소로 해놓는 경우가 많다
+    만약 넣는다고 하면 해당 위치에서 영역을 잡기 위해서 사용 */
+    position: relative;
+}
+
+.main {
+    height: 360px;
+    background-image: url("https://www.fun-coding.org/assets_lms/images/photodune-4161018-group-of-students-m.jpg");
+    background-size: cover;
+    background-position: center 10%;
+    /* 반복이 안되게 설정 */
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(47, 48, 49);
+    opacity: 0.8;
+    z-index: 2;
+    /* 헤더 분리 */
+    margin-top: 60px;
+}
+
+.title-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 0.8rem;
+}
+
+.message {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 2rem;
+}
+
+.skill-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.skill {
+    width: 25%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    /* box-shadow mdn (박스 그림자 프로퍼티) 사이트 참조 */
+    box-shadow: 5px 5px 5px -3px;
+    transition: 0.4s;
+}
+
+.skill:hover {
+    transform: translate(0, -5px);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin: 0 10px;
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.subtitle-name {
+    font-weight: bold;
+    color: #545e6f;
+    margin-bottom: 0.2rem;
+}
+
+.skill-usage {
+    font-size: 0.9rem;
+    color: #545e6f;
+}
+
+.js-style {
+    color: yellow;
+}
+
+.roadmap-container {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.roadmap-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roadmap-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #545e6f;
+}
+
+.slide-prev {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(47, 48, 89);
+}
+
+.slide-next {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(47, 48, 89);
+}
+
+.arrow-container {
+    display: flex;
+}
+
+/* ul 초기화 */
+.class-list {
+    display: flex;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.class-card {
+    width: 240px;
+    box-shadow: 5px 5px 5px -3px;
+    border-radius: 10px;
+    margin: 0 10px;
+    transition: 0.4s;
+/* 크기를 축소하지 않고 고정하려면 max-width도 맞춰줘야 한다.  */
+    flex-shrink: 0;
+}
+
+.class-card:hover {
+    box-shadow: 5px 5px 5px 0px;
+    transform: translate(0, -5px);
+}
+
+.class-image {
+    max-width: 240px;
+    /* 시계방향 t-l, t-r, b-r, b-l */
+    border-radius: 10px 10px 0 0;
+}
+
+.class-container {
+    width: 100%;
+    padding: 1rem;
+}
+
+.class-skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class-type {
+    font-size: 0.9rem;
+}
+
+.class-format {
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #0d47a1;
+    padding: 0.2rem;
+}
+
+.class-desc {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.class-title {
+    font-weight: bold;
+    color: #545e6f;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.5rem;
+}
+
+.class-detail {
+    font-size: 0.9rem;
+    color: #545e6f;
+    line-height: 1.5rem;
+}
+
+li a:hover {
+    cursor: pointer;
+}
+/* Section End */
+
+/* footer start */
+footer {
+    border-top: 1px solid #e4e4e4;
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.footer-message {
+    font-weight: bold;
+    columns: #545454;
+    margin: 0.4rem 0.5rem;
+}
+
+.footer-contact {
+    columns: #545454;
+    margin: 0.4rem 0.5rem;
+}
+
+.footer-copyright {
+    color: #545454;
+    margin: 1rem 0.5rem;
+}
+/* footer end */
+
+@media only screen and (min-width: 1200px) {
+    .inner {
+        max-width: 1200px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .skill-container {
+        display: none;
+    }
+}
