@@ -347,6 +347,8 @@
 
     </footer>
     <a id="backtotop"></a>
-    <script src="js/main.js"></script>
+    <!-- ES6 문법을 일부 지원하는 브라우저(익스플로러) CDN 방식으로 babel 사용 후 script type을 text/babel로 하면 문제를 해결할 수 있다. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+    <script type="text/babel" src="js/main.js"></script>
 </body>
 </html>
