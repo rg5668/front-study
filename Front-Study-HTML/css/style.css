@@ -284,11 +284,17 @@ section {
 .class-desc {
     width: 100%;
     margin-top: 1rem;
+    color: #545e6f;
+}
+
+.class-desc:hover {
+    color: #2186c4;
 }
 
 .class-title {
     font-weight: bold;
-    color: #545e6f;
+    /* color를 지정하면 hover가 상속이 안되어 상속 inherit을 쓴다 */
+    color: inherit;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -298,13 +304,24 @@ section {
 
 .class-detail {
     font-size: 0.9rem;
-    color: #545e6f;
+    /* color를 지정하면 hover가 상속이 안되어 상속 inherit을 쓴다 */
+    color: inherit;
     line-height: 1.5rem;
 }
 
 li a:hover {
     cursor: pointer;
 }
+
+/* drag 할 수 있는 아이템임을 나타내는 표시 포인터로 변경 */
+ul li img:hover {
+    cursor: grab;
+}
+/* dragging 중인 상태에서 잡는 표시를 포인터로 변경 */
+ul li img:active {
+    cursor: grabbing;
+}
+
 /* Section End */
 
 /* footer start */
@@ -382,5 +399,43 @@ footer {
 @media only screen and (max-width: 980px) {
     .skill-container {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .class-skill {
+        display: none;
+    }
+    .class-container {
+        padding: 0.5rem;
+    }
+    .class-desc {
+        margin-top: 0rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .title {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 0.8rem;
+    }
+
+    .message {
+        font-size: 1.4rem;
+        font-weight: normal;
+        color: #fff;
+        line-height: 2rem;
+    }
+
+    .class-skill {
+        display: none;
+    }
+    .class-container {
+        padding: 0.5rem;
+    }
+    .class-desc {
+        margin-top: 0.3rem;
     }
 }
